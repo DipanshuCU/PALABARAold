@@ -20,20 +20,41 @@ IV. After each attempt, the game provides feedback on the correctness of your gu
 V. Continue guessing until you either uncover the entire word or exhaust your attempts. The game's scoring system rewards both correctness and the speed of solving the puzzle, so aim to achieve the highest score possible.
 
 ### 4. Additional Features & Notes
-A. **Scoring Mechanism**: Palabara incorporates a scoring system that rewards players for both correctness and the speed of solving the puzzle. Compete with friends or challenge yourself to achieve high scores.
+A. **Guessing Strategy**: In Palabara, players use logic, vocabulary, and pattern recognition to deduce the hidden word efficiently, aiming for each guess to be a step closer to the solution.
 
-B. **Hint System**: Players can receive hints strategically placed to provide insights into the word's theme or offer starting points for guessing, enhancing the gameplay experience.
+B. **Limited Attempts**: Palabara challenges players with a restricted number of guesses, intensifying the strategic aspect of the game. Players must use each attempt judiciously to deduce the word effectively.
 
-C. **Motivational Quotes**: Palabara offers motivational quotes upon both victory and defeat, providing encouragement and inspiration to players throughout their gaming experience.
+C. **Feedback System**: After every guess, Palabara offers feedback on correct letters and their positions. This guidance aids players in refining their guesses and advancing through the game with greater precision.
 
 ### 5. Version Log
-- **Version 1 Code**
-   1. Initial implementation lacking theme selection and error handling.
-   2. Potential issues with scoring calculation.
+- **Version 1**
+   Uploaded by: Dipanshu Puri
+   Date: 3rd May, 2024
+   Changes:
+     1. Created the main guessing grid as well the main framework of the project.
+     2. Set up functions to add virtual keyboard.
+   _Done in Python_
       
-- **Version 2 and Version 3 Code**
-   1. Absence of tKinter Graphical User Interface (GUI).
-   2. Difficulty selection validation issues.
+- **Version 2**
+   Uploaded by:
+   Date:
+   Changes:
+   _Done in Python_
       
-- **Version 5 Code**
-   1. Functionalities such as update_theme_label and create_widgets require refinement for improved functionality and user experience.
+- **Version 3**
+   Uploaded by:
+   Date:
+   Changes:
+   _Done in Python_
+
+- **Version 4**
+   Uploaded by:
+   Date:
+   Changes:
+   _Done in Python_
+
+- **Version 5**
+   Uploaded by:
+   Date:
+   Changes:
+   _Done in Python_
