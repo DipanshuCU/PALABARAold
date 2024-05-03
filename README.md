@@ -27,54 +27,35 @@ B. **Limited Attempts**: Palabara challenges players with a restricted number of
 C. **Feedback System**: After every guess, Palabara offers feedback on correct letters and their positions. This guidance aids players in refining their guesses and advancing through the game with greater precision.
 
 ### 5. Version Log
+
 - **Version 1**
-  
-   Uploaded by: Dipanshu Puri
-  
-   Date: 3rd May, 2024
-  
-   Changes:
-     I. Created the main guessing grid as well the main framework of the project.
-     II. Set up functions to add virtual keyboard.
-        
-   _Done in Python_
-      
+  - **Uploaded by:** Dipanshu Puri
+  - **Date:** 3rd May, 2024
+  - **Changes:**
+    1. Created main guessing grid and project framework.
+    2. Implemented functions for virtual keyboard.
+  - *Done in Python*
+
 - **Version 2**
-  
-   Uploaded by:
-  
-   Date:
-  
-   Changes:
-  
-   _Done in Python_
-      
+  - **Uploaded by:**
+  - **Date:**
+  - **Changes:**
+  - *Done in Python*
+
 - **Version 3**
-  
-   Uploaded by:
-  
-   Date:
-  
-   Changes:
-  
-   _Done in Python_
+  - **Uploaded by:**
+  - **Date:**
+  - **Changes:**
+  - *Done in Python*
 
 - **Version 4**
-  
-   Uploaded by:
-  
-   Date:
-  
-   Changes:
-  
-   _Done in Python_
+  - **Uploaded by:**
+  - **Date:**
+  - **Changes:**
+  - *Done in Python*
 
 - **Version 5**
-  
-   Uploaded by:
-  
-   Date:
-  
-   Changes:
-  
-   _Done in Python_
+  - **Uploaded by:**
+  - **Date:**
+  - **Changes:**
+  - *Done in Python*
