@@ -28,33 +28,53 @@ C. **Feedback System**: After every guess, Palabara offers feedback on correct l
 
 ### 5. Version Log
 - **Version 1**
+  
    Uploaded by: Dipanshu Puri
+  
    Date: 3rd May, 2024
+  
    Changes:
-     1. Created the main guessing grid as well the main framework of the project.
-     2. Set up functions to add virtual keyboard.
+     I. Created the main guessing grid as well the main framework of the project.
+     II. Set up functions to add virtual keyboard.
+        
    _Done in Python_
       
 - **Version 2**
+  
    Uploaded by:
+  
    Date:
+  
    Changes:
+  
    _Done in Python_
       
 - **Version 3**
+  
    Uploaded by:
+  
    Date:
+  
    Changes:
+  
    _Done in Python_
 
 - **Version 4**
+  
    Uploaded by:
+  
    Date:
+  
    Changes:
+  
    _Done in Python_
 
 - **Version 5**
+  
    Uploaded by:
+  
    Date:
+  
    Changes:
+  
    _Done in Python_
