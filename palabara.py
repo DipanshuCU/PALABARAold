@@ -96,7 +96,75 @@ class MainScreen(tk.Frame):
         # bottom empty separator
         tk.Frame(self, bg=COLOR_BLANK, height=45).grid()
 
-       
+        # ==> virtual keyboard ==>
+        container = tk.Frame(self, bg=COLOR_BLANK)
+        container.grid()
+
+        # add all the alphabets
+        self.keyboard_buttons = {}
+        for i, keys in enumerate(["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"]):
+            row = tk.Frame(container, bg=COLOR_BLANK)
+            row.grid(row=i, column=0)
+
+            for j, c in enumerate(keys):
+                if i == 2:  # leave one column for the ENTER button in the last row
+                    j += 1
+
+                cell = tk.Frame(
+                    row,
+                    width=40,
+                    height=55,
+                    highlightthickness=1,
+                    highlightbackground=COLOR_INCORRECT,
+                )
+                cell.grid_propagate(0)
+                cell.grid_rowconfigure(0, weight=1)
+                cell.grid_columnconfigure(0, weight=1)
+                cell.grid(row=0, column=j, padx=PADDING, pady=PADDING)
+                btn = tk.Button(
+                    cell,
+                    text=c,
+                    justify="center",
+                    font=("Helvetica Neue", 13),
+                    bg=COLOR_BLANK,
+                    fg="#d7dadc",
+                    cursor="hand2",
+                    border=0,
+                    command=lambda c=c: self.enter_letter(key=c),
+                )
+                btn.grid(sticky="nswe")
+                self.keyboard_buttons[c] = btn
+
+        for col in (0, 8):
+            text = "ENTER" if col == 0 else ""
+            func = self.check_word if col == 0 else self.remove_letter
+            cell = tk.Frame(
+                row,
+                width=75,
+                height=55,
+                highlightthickness=1,
+                highlightbackground=COLOR_INCORRECT,
+            )
+            cell.grid_propagate(0)
+            cell.grid_rowconfigure(0, weight=1)
+            cell.grid_columnconfigure(0, weight=1)
+            cell.grid(row=0, column=col, padx=PADDING, pady=PADDING)
+            btn = tk.Button(
+                cell,
+                text=text,
+                justify="center",
+                font=("Helvetica Neue", 13),
+                bg=COLOR_BLANK,
+                fg="#d7dadc",
+                cursor="hand2",
+                border=0,
+                command=func,
+            )
+            btn.grid(row=0, column=0, sticky="nswe")
+
+        # set the image for delete button
+        btn.configure(image=self.icons["backspace"])
+        # <== virtual keyboard <==
 
     def toast(self, message, duration=2):
         """show a toast message which will disappear after {duration} seconds"""
@@ -218,6 +286,7 @@ class WordleApp(tk.Tk):
         self.show_frame("MainScreen")
 
         self.fullscreen = False
+        self.bind("<F11>", self.fullscreen_toggle)
 
     def show_frame(self, page_name):
         """Show a frame for the given page name"""
@@ -226,6 +295,16 @@ class WordleApp(tk.Tk):
         frame.focus_set()
         # raise the frame to the top of the stack so that it is visible
         frame.tkraise()
+
+    def fullscreen_toggle(self, event=None):
+        """Toggle fullscreen mode"""
+        if self.fullscreen:
+            self.wm_attributes("-fullscreen", False)
+            self.fullscreen = False
+        else:
+            self.wm_attributes("-fullscreen", True)
+            self.fullscreen = True
+    
 
 if __name__ == "__main__":
     WordleApp().mainloop()
