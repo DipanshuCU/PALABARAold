@@ -3,6 +3,8 @@
 ### 1. What is Palabara?
 Palabara is an engaging Python word-guessing game inspired by the popular game Wordle. Players attempt to guess a hidden word within a limited number of attempts. Each correct letter guessed in the correct position is displayed in green, while correct letters in the wrong position appear in yellow. Incorrect guesses remain grey. The game challenges players to deduce the word through strategic guessing and deduction.
 
+![screenshot](images/screenshot1.png)
+
 ### 2. Project Team
 - **Dikshita Yadav (2310991817)** - Project Manager: Oversees project planning, coordinates team efforts, and ensures timely delivery.
 - **Dipanshu Puri (2310991818)** - Developer: Implements game logic, UI elements, and debugging.
